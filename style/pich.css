@@ -190,7 +190,7 @@ header {
 }
 
 /* Media Queries for Responsive Design */
-@media (min-width: 280px) and (max-width: 399px) {
+@media (min-width: 260px) and (max-width: 399px) {
     .menu-item {
         flex-direction: col;
         text-align: left;
