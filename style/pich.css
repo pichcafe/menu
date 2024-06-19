@@ -190,7 +190,7 @@ header {
 }
 
 /* Media Queries for Responsive Design */
-@media (min-width: 400px) and (max-width: 599px) {
+@media (min-width: 280px) and (max-width: 399px) {
     .menu-item {
         flex-direction: col;
         text-align: left;
@@ -211,13 +211,13 @@ header {
         /* background-color: #f42851; */
     }
     .item-name {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .item-caption {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     .scrollmenu a {
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     
     
