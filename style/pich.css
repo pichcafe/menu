@@ -1,0 +1,282 @@
+html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff; /* Dark Grey, or any other color from the suggestions */
+    color: #ffffff; /* White text for better readability on dark backgrounds */
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Background color for the header */
+    
+}
+
+.menu{
+    padding: 20px;
+}
+
+.logo-photo {
+    width: 12.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-self: center;
+}
+
+.scrollmenu {
+    background-color: #ffffff;
+    overflow-x: scroll;
+    top: 0;
+    white-space: nowrap;
+    /*margin-bottom: 20px;*/
+    transition: top 0.3s;
+    border-radius: 16px;
+
+}
+.scroll-menu-parent{
+    left: 0!important;
+    padding: 20px;
+    overflow-x: hidden;
+    background: #ffffff!important;
+    max-width: 100%;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-family: digi-Nafas-Medium;
+    font-size: 1.5rem;
+}
+
+.scrollmenu a:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.scrollmenu button {
+    margin-right: 5px;
+    padding: 12px 18px;
+    font-size: 1rem;
+}
+
+.sticky {
+    /* position: fixed; */
+    position: fixed!important;
+    top: 0!important;
+    /*padding: 20px 0!important;*/
+    width: 100%!important;
+    z-index: 1000!important; /* Ensure it stays above other content */
+}
+
+
+
+.snack,
+.wierddrinks,
+.food,
+.pasta,
+.shake,
+.sherbet,
+.icetea,
+.cocktail,
+.herbal-tea,
+.breakfast,
+.brewcoffees,
+.hotcoffees,
+.hotdrinks,
+.coldcoffees {
+    border: none;
+    border-radius: 20%;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.item-button{
+    border: none;
+    border-radius: 20%;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.snack:hover,
+.wierddrinks:hover,
+.food:hover,
+.shake:hover,
+.sherbet:hover,
+.icetea:hover,
+.cocktail:hover,
+.herbal-tea:hover,
+.breakfast:hover,
+.brewcoffees:hover,
+.hotcoffees:hover,
+.hotdrinks:hover,
+.coldcoffees:hover {
+    background-color: rgb(73, 185, 13);
+    font-size: 2.7rem;
+}
+.item-button:hover {
+    background-color: rgb(73, 185, 13);
+    font-size: 2.7rem;
+}
+
+.menu-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    font-family: digi-Nafas-Medium;
+}
+
+.item-image {
+    flex-shrink: 0;
+    width: 70%;
+    text-align: start;
+    margin: 0;
+    margin-right: -6rem;
+}
+
+.item-image img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.item-price {
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    width: 50%;
+    text-align: center;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    gap: 20px;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+.item-name {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #ffffff; 
+    text-align: end;
+    width: 100%;
+}
+
+.item-caption {
+    margin-top: 5px;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: end;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 400px) and (max-width: 599px) {
+    .menu-item {
+        flex-direction: col;
+        text-align: left;
+    }
+    .item-image {
+        width: 40%;
+        margin: 0;
+        /* background-color: rebeccapurple; */
+    }
+    .item-image img {
+        width: 100%;
+    }
+    .item-price {
+        font-size: 2rem;
+        text-align: center;
+        justify-items: end;
+        align-items: end;
+        /* background-color: #f42851; */
+    }
+    .item-name {
+        font-size: 3rem;
+    }
+    .item-caption {
+        font-size: 1.75rem;
+    }
+    .scrollmenu a {
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media (min-width: 600px) {
+    .menu-item {
+        flex-direction: row;
+        text-align: left;
+    }
+    .item-image {
+        width: 50%;
+        margin: 0;
+    }
+    .item-price {
+        font-size: 2.5rem;
+    }
+    .item-name {
+        font-size: 3.5rem;
+    }
+    .item-caption {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .menu-item {
+        flex-direction: row;
+        text-align: left;
+    }
+    .item-image {
+        width: 40%;
+        margin-right: 20px;
+    }
+    .item-price {
+        font-size: 3rem;
+    }
+    .item-name {
+        font-size: 5rem;
+    }
+    .item-caption {
+        font-size: 3rem;
+    }
+}
+/*scrollbar styling*/
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
