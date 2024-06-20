@@ -277,14 +277,28 @@ header {
         text-align: left;
     }
     .item-image {
-        width: 50%;
+        width: 45%;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        /* background-color: rebeccapurple;  */
+
+    }
+    .item-image img {
+        width: 100%;
+        min-width: 240px;
+        height: 150px;
+        object-fit: cover;
+        /* background-color: #f42851; */
+
     }
     .item-price {
         font-size: 2.5rem;
     }
     .item-name {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .item-caption {
         font-size: 2.5rem;
