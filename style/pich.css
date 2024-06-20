@@ -198,6 +198,10 @@ header {
     .scrollmenu a {
         padding: 0;
     }
+    .item-button:hover {
+        font-size: 1.25rem;
+    }
+
     .item-image {
         width: 50%;
         margin: 0;
@@ -250,6 +254,9 @@ header {
     }
     .scrollmenu a {
         padding: 5px;
+    }
+    .item-button:hover {
+        font-size: 1.6rem;
     }
     .item-image img {
         width: 100%;
