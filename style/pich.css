@@ -238,12 +238,18 @@ header {
     .item-image {
         width: 50%;
         height: auto;
-        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
         margin: 0;
-        /* background-color: rebeccapurple; */
+        /* background-color: rebeccapurple;  */
     }
     .item-image img {
         width: 100%;
+        min-width: 165px;
+        height: 110px;
+        object-fit: cover;
     }
     .item-price {
         font-size: 2rem;
@@ -253,10 +259,10 @@ header {
         /* background-color: #f42851; */
     }
     .item-name {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .item-caption {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     .scrollmenu a {
         font-size: 1rem;
