@@ -199,7 +199,7 @@ header {
         padding: 0;
     }
     .item-button:hover {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .item-image {
@@ -256,7 +256,7 @@ header {
         padding: 5px;
     }
     .item-button:hover {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .item-image img {
         width: 100%;
